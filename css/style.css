@@ -4,3 +4,108 @@ body{
     font-weight: 100;
     font-size: 0.5em;
 }
+div{
+    display: inline-block;
+    margin: 5px;
+}
+
+h3{
+    padding-top: 50% ;
+}
+@media (max-width:500px){
+    
+    div{
+        padding:2.6em;
+        margin: 0px;
+    };
+
+}
+
+.card{
+    background-color:white;
+    border-radius: 2px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 2px 5px rgba(0,0,0, 0.16), 0px 2px 10px rgba(0,0,0, 0.12);
+    text-align: center;
+
+    margin: 0.7em;
+}
+
+.card-two, .card-three ,.card-four{
+    background-color:white;
+    text-align: center;
+    border-radius: 2px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+
+    margin: 0.7em;
+}
+
+.card-two::before, .card-two::after{
+   
+    content: "";
+    width: 30%;
+    height: 10px;
+    top:93%;
+    left: 69%;
+    transform: rotate(5deg);
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(0,0,0, 0.40);
+    z-index:-1;
+    background-color:transparent;
+}
+.card-two::before{
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+
+.card-three::before {
+   
+    content: "";
+    width: 30%;
+    height: 10px;
+    top:93%;
+    left: 69%;
+    transform: rotate(5deg);
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(0,0,0, 0.40);
+    z-index:-1;
+    background-color:transparent;
+}
+.card-three::before{
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+.card-four::after {
+   
+    content: "";
+    width: 30%;
+    height: 10px;
+    top:93%;
+    left: 69%;
+    transform: rotate(-5deg);
+    position: absolute;
+    box-shadow: 0px 15px 10px rgba(0,0,0, 0.40);
+    z-index:-1;
+    background-color:transparent;
+}
+
+
+.box-3d{
+    background-color: rgb(200, 50, 50);
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 0px 3px rgb(180, 40, 40),3px 4px 4px rgba(0,0,0, 0.2);
+}
+
+.box-3d:active{
+    box-shadow: 2px 2px 0px 2px rgb(180, 40, 40),3px 4px 4px rgba(0,0,0, 0.2);
+
+}
+
